@@ -12,7 +12,6 @@ import javafx.stage.Stage;
 // then press Enter. You can now see whitespace characters in your code.
 public class Main extends Application {
     public static BorderPane borderPane;
-    public static GridPane gridPaneApp;
     @Override
     public void start(Stage stage) throws Exception {
         borderPane = new BorderPane();
@@ -34,10 +33,7 @@ public class Main extends Application {
         topHbox.setAlignment(Pos.BASELINE_RIGHT);
         topHbox.setBackground(new Background(new BackgroundFill(Color.rgb(88, 90, 94), CornerRadii.EMPTY, Insets.EMPTY)));
 
-        gridPaneApp = new GridPane();
-        gridPaneApp.setVgap(15);
-        gridPaneApp.setHgap(25);
-        borderPane.setCenter(gridPaneApp);
+
 
         stage.setTitle("Hello!");
         stage.setScene(scene);
